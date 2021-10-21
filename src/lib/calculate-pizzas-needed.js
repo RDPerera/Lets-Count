@@ -1,7 +1,7 @@
 export default function calculatePizzasNeeded(
   numberOfPeople,
   slicesPerPerson,
-  slicesPerPizza = 8,
+  slicesPerPizzas = 9,
 ) {
-  return Math.ceil(numberOfPeople * slicesPerPerson / slicesPerPizza);
+  return Math.ceil(numberOfPeople * slicesPerPerson / slicesPerPizzas);
 }
