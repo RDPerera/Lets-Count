@@ -36,7 +36,7 @@ input[type='submit'] {
 button:hover,
 .button:hover,
 input[type='submit']:hover {
-  background-color: #f65381;
+  background-color: #f69381;
 }
 
 button:active,
