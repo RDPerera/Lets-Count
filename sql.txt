@@ -1,0 +1,32 @@
+CREATE TABLE login(
+    user_id int(10) NOT NULL AUTO_INCREMENT,
+    username varchar(255) NOT NULL,
+    password varchar (255) NOT NULL,
+    access_level int(2) NOT NULL,
+    PRIMARY KEY(user_id)
+);
+
+CREATE TABLE student(
+    student_id int(10) NOT NULL,
+    name varchar(255) NOT NULL,
+    email varchar(255) NOT NULL,
+    PRIMARY KEY(student_id),
+    FOREIGN KEY (student_id) REFERENCES login(user_id) ON DELETE CASCADE
+);
+
+CREATE TABLE moderator(
+    moderator_id int(10) NOT NULL,
+    name varchar(255) NOT NULL,
+    email varchar(255) NOT NULL,
+    PRIMARY KEY(moderator_id),
+    FOREIGN KEY (moderator_id) REFERENCES login(user_id) ON DELETE CASCADE
+);
+
+CREATE TABLE admin(
+    admin_id int(10) NOT NULL,
+    name varchar(255) NOT NULL,
+    email varchar(255) NOT NULL,
+    PRIMARY KEY(admin_id),
+    FOREIGN KEY (admin_id) REFERENCES login(user_id) ON DELETE CASCADE
+);
+    

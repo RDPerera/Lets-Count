@@ -45,6 +45,12 @@ input[type='submit']:active {
   background-color: #f4466e;
 }
 
+button:hover,
+.button:hover,
+input[type='submit']:hover {
+  background-color: #f65e81;
+}
+
 button.full-width,
 .button.full-width,
 input[type='submit'].full-width {
