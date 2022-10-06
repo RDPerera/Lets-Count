@@ -33,6 +33,12 @@ input[type='submit'] {
   transition: all 0.2s;
 }
 
+button:hover,
+.button:hover,
+input[type='submit']:hover {
+  background-color: #f65381;
+}
+
 button:active,
 .button:active,
 input[type='submit']:active {
