@@ -42,6 +42,7 @@ void display(struct node ** graph,int n){
     for (int i = 0; i < n; i++)
     {
         cout << i << "->";
+		cout << i << "->";
         struct node *temp;
         temp=graph[i];
         while(temp->next!=NULL)

@@ -27,6 +27,8 @@ void display(int **graph,int n)
             cout << graph[i][j]<< " ";
         }
         cout<< endl;
+		cout<< endl;
+		cout<< endl;
     }
 }
 
@@ -59,4 +61,5 @@ int main()
     }
     display(graph,n);
     return 0;
+	display(graph,n);
 }
