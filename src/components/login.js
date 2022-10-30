@@ -2,6 +2,7 @@ import React from 'react'
 
 function login() {
     return (
+        
         <div>
             <form>
                 <div class="mb-3">
@@ -21,12 +22,17 @@ function login() {
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
 
+            
             <label for="inputPassword5" class="form-label">Password</label>
                 <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"></input>
                     <div id="passwordHelpBlock" class="form-text">
                         Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
                     </div>
                  <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled></input>
+
+                 <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">New around here? Sign up</a>
+                    <a class="dropdown-item" href="#">Forgot password?</a>
         </div>
     )
 }
